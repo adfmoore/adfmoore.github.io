@@ -109,3 +109,13 @@ nav {
     align-items: flex-end;
   }
 }
+
+.nav-left a {
+  text-decoration: none;  
+  color: black;          
+}
+
+.nav-left a:visited {
+  color: black;           
+}
+
