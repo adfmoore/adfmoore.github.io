@@ -8,7 +8,9 @@
 <body>
 
   <nav>
-    <div class="nav-left"><a href = "home">Daniel Moore</div>
+    <div class="nav-left">
+        <a href = "index.html">Daniel Moore</a>
+      </div>
     <div class="nav-right">
       <a href="about">About</a>
       <a href="wip">CV</a>
