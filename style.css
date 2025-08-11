@@ -23,6 +23,17 @@ nav {
 .nav-left {
   font-weight: bold;
   font-size: 1.2rem;
+  text-decoration: none;  
+  color: black; 
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-left a:hover {
+  text-decoartion: underline;
 }
 
 .nav-right a {
@@ -110,12 +121,4 @@ nav {
   }
 }
 
-.nav-left a {
-  text-decoration: none;  
-  color: black;          
-}
-
-.nav-left a:visited {
-  color: black;           
-}
 
