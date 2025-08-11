@@ -28,38 +28,20 @@ h1 {
   color: #222;
 }
 
-html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, sans-serif;
+.wrap {
+    width: 100%;
 }
 
-
-.split {
-  height: calc(100% - 50px); /* Adjust based on your nav height */
-  width: 50%;
-  position: fixed;
-  top: 50px; /* Adjust to match nav height */
-  overflow-x: hidden;
-  padding: 20px;
+.floatleft {
+    float:left; 
+    width: 80%;
+    background-color: #ff0000;
+    height: 400px;
 }
 
-.left {
-  left: 0;
-  background-color: #ddd;
+.floatright {
+float: right;
+    background-color: #00ff00;
+    height: 400px;
+    width: 20%;
 }
-
-.right {
-  right: 0;
-  background-color: #f9f9f9;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
