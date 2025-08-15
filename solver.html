@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daniel Moore - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-left">
+        <a href = "index.html">Daniel Moore</a>
+      </div>
+    <div class="nav-right">
+      <a href="about.html">About</a>
+      <a href="wip.html">CV</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href = "solver.html">Pokemon VGC Solver </a>
+    </div>
+  </nav>
+
+  <h1>Pokemon VGC Solver</h1> 
+  <p>
+     For those unfamiliar, Pokemon is a children's video game where players (henceforth trainers) encounter and capture Pokemon in the wild. These Pokemon can then be used in Pokemon battling, which is the core gameplay mechanic of the games that keeps so many trainers returning, year after year.
+    There are two battling formats, single and double battles. Each trainer can have a total of six unique Pokemon at a time, with duplicates typically banned. In single battles, two trainers compete against each other with one Pokemon at a time. In double battles, trainers battle with two Pokemon at a time. Before
+    diving into the battles, it is important to lay out what characterizes a Pokemon.
+  </p>
+
+  <h1> What makes a Pokemon?</h1>
+  <p>
+    To date, there are 1025 unique Pokemon. Each Pokemon has various features that make it unique. First and foremost, each Pokemon has a unique visual design. Second, they have a "level", which is in the range [1, 100]. By battling and defeating opponents, Pokemon gain experience points. Once a Pokemon gains enough experience points, they "level-up" to the next level. Some Pokemon can "evolve',
+    a process by which leveling up changes its visual design. Not only does evolution change the visual design, but it can also change a Pokemon's stat distribution -- but what is a stat distribution?
+
+    In Pokemon games, there are six "base stats" that every Pokemon has: Health Points (HP), Attack, Defense, Special Attack, Special Defense, and Speed. While visual designs indicate to the player what Pokemon they are using or are up against,
+    it is ultimately the base stats that characterize a Pokemon. HP determines how much health a Pokemon has, Attack determines how strong their physical attacking moves are, defense determines how well they can receive a physical attack, and Special Attack and Special Defense are similarly defined. The speed stat is arguably the most important, as it determines the order that Pokemon attack. Each of these stats are defined on the set of natural numbers.
+    On top of each Pokemon's base stats, there are additional modifiers that affect a Pokemon's effectiveness called Individual Values (IVs) and Effort Values (EVs). Each Pokemon has one IV for each stat. IVs are defined on the set of integers from [0, 31]. IVs are randomly selected for each base stat when a Pokemon is generated, and modify the base stats increasingly as the IV increases. IVs are fixed, and cannot be altered by trainer. EVs, on the other hand, are earned from battling Pokemon. Every defeated Pokemon gives the victor a deterministic number of EVs that are based on the defeated Pokemon's species. 
+    EVs also increase the associated stat at certain thresholds. A Pokemon may have up to 252 EVs per stat, with a maximum of 512 EVs across all six stats. 
+
+    A turn in Pokemon is played simultaneously, wherein each Pokemon on the field selects an action. There are two actions a Pokemon can take each turn -- they can use an attack or they can switch off of the field for a teammate. Trainers must select four moves for each of their Pokemon to have access to in battle. These moves are selected from a broader "move pool" that is pre-determined by the game designers. Each move has two base characteristics that define it -- accuracy and base power. Accuracy defines the likelihood a move lands on it's opponent, and base power is an input into the damage function. Further, there are two classes of 
+    attacks a Pokemon can use -- damaging and non-damaging moves. Non-damaging moves apply status effects, stat changes, or other effects to their targer. Damaging moves reduce their target's HP, and some damaging moves have secondary effects similar to that of non-damaging moves. Moves have one other feature not yet introduced called types. 
+    
+   Types are another characteristic that define both Pokemon and their moves. There are 18** unique types in Pokemon, and each Pokemon can have a total of two types. This means there are a total of 171 possible type combinations (inclusive of single-type Pokemon). 
+   As hinted at, types are also applied to moves. Pokemon are not restricted to learning only moves that match their type, these moves are incentivized. When a Pokemon uses a damaging move that matches their type, 
+    a Same-Type Attack Boost (STAB) is applied to that move. This modifier takes the base power of a move and applies a scalar of 1.5. So, if a fire-type Pokemon uses a fire-type move with a base power of 80, the move's basepower transforms to 120. 
+
+    Types are important because they determine offensive and defensive matchups, primarily through modifiers similar to that of STAB. An item that every Pokemon player must learn is what is known as the type chart.
+    The type chart below details the interactions between each of the types. 
+
+    <img src="images/typechart.png" alt="Type Chart">
+    For example, a fire-type move does reduced damage to water-type Pokemon by a multiplier of 0.5. A fire-type move does increased damage to grass-type Pokemon by a mutlipler of 2.
+  </p>
+
+  <h1>Battles</h1>
+  <p>
+  Now that we have a grasp on Pokemon and what defines them, I need to describe how Pokemon battles play out. There are two prevailing formats of Pokemon battling, singles and doubles. 
+    In singles, two trainers battle each other using one Pokemon at a time
+  </p>
+</body>
+</html>
