@@ -98,7 +98,7 @@
  <p style="margin-left: 30px; margin-right: 30px;">
     In double battles, trainers select four Pokemon from their party of six to bring to each battle. Instead of one Pokemon being on the field, each trainer has two Pokemon, meaning four Pokemon are on the field each turn. This has huge (literally) implications for each players strategy space. Instead of the previous space $s_i$ in single battles, we need to define a new strategy space to account for the additional Pokemon. Since substitutions are mutally exclusive (Pokemon 2 cannot swap for Pokemon 3 if Pokemon 1 already selected to swap for Pokemon 3 that same turn), we can remove this option from the set.
     Additionally, not only do we have to select what move to use, we have to select what Pokemon to use it on, for both of their two active Pokemon. Thus, the strategy space for a trainer in a double battle is: 
-    $$\{M_1^1, \, M_1^2, \, M_2^1,\, M_2^2,\, M_3^1,\, M_3^2,\, M_4^1,\, M_4^2,\, S_1,\, S_2\} \times \{M_1^1, \, M_1^2, \, M_2^1,\, M_2^2,\, M_3^1,\, M_3^2,\, M_4^1,\, M_4^2,\, S_1,\, S_2\} \setminus\{ S_1 S_1, \, S_2 S_2 \}$$
+    $$s_i^2 = \{M_1^1, \, M_1^2, \, M_2^1,\, M_2^2,\, M_3^1,\, M_3^2,\, M_4^1,\, M_4^2,\, S_1,\, S_2\} \times \{M_1^1, \, M_1^2, \, M_2^1,\, M_2^2,\, M_3^1,\, M_3^2,\, M_4^1,\, M_4^2,\, S_1,\, S_2\} \setminus\{ S_1 S_1, \, S_2 S_2 \}$$
     where $M_j^n$ indicates using move $j$ on opponent slot $n$. While most moves are single-target, some moves can hit both targets. 
   </p>
 
