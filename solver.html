@@ -112,7 +112,7 @@
     <center>
 <img src="images/dbl.jpg" alt="double battle">
     </center>
-  <h2>The Problem</h2>
+  <h1>The Problem</h1>
   <p style="margin-left: 30px; margin-right: 30px;">
     To date, no algorithm has been able to successfully play Pokemon competitively. This is due to the complex nature of the game, large strategy space, and built-in-randomness. 
     In the situation above, the turn order is (1) Heracross [85 base speed] (2) Gyarados [81 base speed] (3) Dewgong [70 base speed] and (4) Togepi [40 base speed]. If all Pokemon choose to use a move, then the moves will be performed in turn order. However, some moves have increased stages of priority. These are commonly referred to as "priority moves". If one Pokemon uses a priority move, it will move before all other Pokemon not using a priority move, even if it is the slowest Pokemon on the field.  For example, the move "Quick Attack" has a single stage of increased priority, meaning if Togepi (slowest Pokemon on the field) uses it, Togetic will move before every other Pokemon. Some moves have higher priority than Quick Attack, such as the move Fake Out, which has +3 priority. If Dewgong uses Fake Out on Togepi using Quick Attack, Dewggong will move first. This brings me to the next point of priority brackets: there are a total of thirteen priority brackets, ranging from $[-7, 5]$. If two Pokemon use a move in the same priority bracket, the faster Pokemon will move first. In the case of negative priority, the Pokemon using a negative priority move will move last even if it is the fastest Pokemon on the field, conditional on all other Pokemon using at least neutral moves.
