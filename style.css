@@ -93,6 +93,7 @@ nav {
 .main-content h1,
 .main-content h2 {
   margin-top: 0;
+  text-align: center;
 }
 
 .main-content a {
