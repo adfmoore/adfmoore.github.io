@@ -6,6 +6,7 @@ body {
   background-color: #fff;
   color: #333;
   line-height: 1.6;
+  border-left: 3px solid #333;
 }
 
 /* Nav Bar */
