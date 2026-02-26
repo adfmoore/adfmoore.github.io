@@ -1,1 +1,1 @@
-Code for: Daniel Moore's website
+Code for website
