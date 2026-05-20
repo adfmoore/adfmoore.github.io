@@ -83,6 +83,22 @@ nav {
 
 .contact-list li {
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-icon {
+  width: 1.25em;
+  height: 1em;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.contact-icon {
+  object-fit: contain;
 }
 
 /* Main Content */
@@ -93,6 +109,11 @@ nav {
 .main-content h1,
 .main-content h2 {
   margin-top: 0;
+}
+
+.paper-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
 }
 
 .main-content a {
@@ -130,5 +151,15 @@ padding: 1rem 2rem;
   padding: 1rem 2rem;
 }
 
-.center { display: block; margin-left: auto; margin-right: auto; width: 50%; 
-        } 
+.center { display: block; margin-left: auto; margin-right: auto; width: 50%;
+        }
+
+code {
+  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+  font-size: 0.9em;
+  background-color: #f4f4f4;
+  color: #c7254e;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  border: 1px solid #e1e1e8;
+}
