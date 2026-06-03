@@ -4,6 +4,28 @@
   <meta charset="UTF-8">
   <title>Daniel Moore - Home</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .references-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem 2rem;
+      margin-top: 1rem;
+    }
+    .reference p {
+      margin: 0.15rem 0;
+    }
+    .ref-name {
+      font-weight: bold;
+    }
+    .ref-role {
+      font-weight: normal;
+    }
+    @media screen and (max-width: 600px) {
+      .references-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -37,16 +59,44 @@
         <p>I am a Ph.D. candidate in the Department of Economics at the University of Washington.</p>
 		
 		<p>
-		My research is in applied microeconomics, with a focus on public and labor economics. I study how firms and households respond to government policies and economic shocks, and how these responses shape labor markets. I use modern causal inference tools such as difference-in-differences, synthetic methods, and machine learning to study these questions.
+		My research is in applied microeconomics, with a focus on public and labor economics. I study how firms and households respond to government policies and economic shocks, and how these responses shape labor markets. I use modern causal inference tools such as difference-in-differences and synthetic methods in conjunction with machine learning to study these questions.
 		</p>
 		
 		<p>
 		My job market paper examines how a change to state tax code impacts employment and firm formation. More broadly, my work leverages large-scale survey and administrative data to measure the heterogeneous effects of public programs.
 		</p>
 		<p>
-		Before starting a Ph.D. at UW, I completed a bachelor's degree in Economics with minor focuses in Mathematics and Chinese at Michigan State University. In my spare time, I enjoy reading, baking, and cooking. I also enjoy watching the NBA and applying machine learning methods to various NBA contexts. You can find these projects on my <a href = "https://github.com/adfmoore">GitHub</a>. Despite my interest in basketball, I once went 9/100 on free throw attempts while conducting a study on the 'Hot Hand'. My results were inconclusive. 
-      <section>
+		Before starting a Ph.D. at UW, I completed a bachelor's degree in Economics with minor focuses in Mathematics and Chinese at Michigan State University. In my spare time, I enjoy reading, baking, and cooking. I also enjoy watching the NBA and applying machine learning methods to various NBA contexts. You can find these projects on my <a href = "https://github.com/adfmoore">GitHub</a>. Despite my interest in basketball, I once went 9/100 on free throw attempts while conducting a study on the 'Hot Hand'. My results were inconclusive.
+		</p>
         <p> The best way to reach me is by email: <a href="mailto:dfmoore@uw.edu">dfmoore@uw.edu</a> </p>
+      </section>
+
+      <section>
+        <h2>References</h2>
+        <div class="references-grid">
+          <div class="reference">
+            <p class="ref-name">Alan Griffith <span class="ref-role">(chair)</span></p>
+            <p>Department of Economics</p>
+            <p>University of Washington</p>
+            <p><a href="mailto:alangrif@uw.edu">alangrif@uw.edu</a></p>
+          </div>
+
+          <div class="reference">
+            <p class="ref-name">Scott Allard</p>
+            <p>Evans School of Public Policy</p>
+            <p>University of Washington</p>
+            <p><a href="mailto:sallard@uw.edu">sallard@uw.edu</a></p>
+          </div>
+
+          <div class="reference">
+            <p class="ref-name">Jackson Bunting</p>
+            <p>Department of Economics</p>
+            <p>University of Washington</p>
+            <p><a href="mailto:buntingj@uw.edu">buntingj@uw.edu</a></p>
+          </div>
+
+  
+        </div>
       </section>
     </main>
   </div>
